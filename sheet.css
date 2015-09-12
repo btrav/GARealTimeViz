@@ -1,0 +1,12 @@
+/* Circle */
+#circle {
+  margin: 20px;
+  background-color: #000;
+  height: 100px;
+  width: 100px;
+  border-radius: 50px;
+  float:left;
+  position:relative;
+  color: white;
+}
+
