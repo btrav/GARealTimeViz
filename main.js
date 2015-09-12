@@ -43,5 +43,7 @@ data.rows.forEach(function(item) {
     frag.appendChild(circle);
 });
 
-var box = document.getElementById('box')
-box.appendChild( frag );
+document.body.appendChild( frag );
+
+// var box =
+// getElementById('box')
