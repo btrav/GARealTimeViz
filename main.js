@@ -36,14 +36,18 @@ var data = {
 var frag = document.createDocumentFragment()
 
 data.rows.forEach(function(item) {
-    var countryName = item[0]
-    var circle = document.createElement('div')
-    circle.id = "circle"
-    circle.innerText = countryName
-    frag.appendChild(circle);
+    var countryName = item[0];
+    var counterUserNumber = item[1];
+    var user = document.createElement('div');
+    var userContent = document.createElement('div');
+    var userTitle = document.createElement('span');
+    userContent.className = "userContent";
+    userTitle.innerText = countryName;
+    userTitle.className = "countryName"
+    user.appendChild(userContent);
+    userContent.appendChild(userTitle);
+    user.className = "user"
+    frag.appendChild(user);
 });
 
 document.body.appendChild( frag );
-
-// var box =
-// getElementById('box')
