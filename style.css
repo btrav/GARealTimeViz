@@ -1,7 +1,6 @@
-/* Circle */
 .user {
     margin: 20px;
-    background-color: #000;
+    background-color: blue;
     height: 100px;
     width: 100px;
     border-radius: 50px;
@@ -11,6 +10,10 @@
     display: table-cell;
     vertical-align: middle;
 
+  /* */
+    -webkit-animation: breathing 5s ease-out infinite normal;
+    animation: breathing 5s ease-out infinite;
+  /* */
 }
 
 .userContent {
@@ -20,17 +23,37 @@
 
 .countryName {
     color: white;
-/*    position:absolute; */
     display:table-cell;
     vertical-align:middle;
     text-align:center;
     padding:1em;
-/*    height: 150px;
-    width: 100px;
-    border-radius: 50%;
-    right: 0px;
-    left: 0px;
-    top: 25%;
-    bottom: 0px; */
+    font-family: 'Montserrat', sans-serif;
+}
 
+
+
+@keyframes breathing {
+  0% {
+    -webkit-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+
+  25% {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+  }
+
+  60% {
+    -webkit-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+
+  100% {
+    -webkit-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    transform: scale(0.9);
+  }
 }
