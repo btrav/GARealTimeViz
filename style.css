@@ -1,9 +1,25 @@
+.header {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 40px;
+  text-align: center;
+  display:block;
+  margin-bottom: 20px;
+  padding-bottom: 25px;
+  background:#F0F5F5;
+}
+
+#vigetLogo {
+ width: 275px;
+ height: 134px;
+ align="middle"
+}
+
 .user {
     margin: 20px;
     background-color: blue;
-    height: 100px;
-    width: 100px;
-    border-radius: 50px;
+    height: 150px;
+    width: 150px;
+    border-radius: 75px;
     float:left;
     position:relative;
     text-align: center;
